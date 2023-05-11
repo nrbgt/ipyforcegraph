@@ -12,17 +12,10 @@ export class LinkShapeModel extends FacetedModel implements IBehave {
 
   static serializers = {
     ...FacetedModel.serializers,
-<<<<<<< HEAD
     color: widget_serialization,
     curvature: widget_serialization,
     line_dash: widget_serialization,
     width: widget_serialization,
-=======
-    color: { deserialize },
-    curvature: { deserialize },
-    line_dash: { deserialize },
-    width: { deserialize },
->>>>>>> e14bc49 (More link shape properties (#62))
   };
 
   protected get _modelClass(): typeof LinkShapeModel {
